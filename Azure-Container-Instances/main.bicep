@@ -5,7 +5,7 @@ targetScope = 'subscription'
 param location string = 'eastus'
 
 @description('Name used for resource group and to generate a unique string for deployed resources.')
-param environmentName string = 'qdrantazure'
+param environmentName string = 'pscopilotqdrantazure'
 
 var abbrs = loadJsonContent('abbreviations.json')
 var resourceToken = toLower(uniqueString(subscription().id, environmentName, location))
